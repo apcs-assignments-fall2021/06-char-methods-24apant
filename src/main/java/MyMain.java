@@ -5,7 +5,18 @@ public class MyMain {
     // it is returned unchanged. 
     public static char toLower(char ch) {
         // REPLACE WITH YOUR CODE
-        return '!';
+
+        int charascii = ch;
+        if (charascii > 90){
+            //lowercase
+            return ch;
+        }
+        else if (charascii < 65){
+            return ch;
+        }
+        else{
+            return (char) ((char) charascii + 32);
+        }
     }
 
     // Changes a lowercase letter to an uppercase letter
